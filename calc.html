@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>Calculate</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc">
+            <form name="form">
+                <div class="calc-input">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value=''">
+
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+
+                    <input type="button" value="." name="lol" onclick="sarah(lol.value)">
+                    <input type="button" value="/" name="onc" onclick="sarah(onc.value)">
+                </div>
+                <div>
+                    <input type="button" value="7" name="b7" onclick="sarah(b7.value)">
+                    <input type="button" value="8" name="b8" onclick="sarah(b8.value)">
+                    <input type="button" value="9" name="b9" onclick="sarah(b9.value)">
+                    <input type="button" value="*" name="x" onclick="sarah(x.value)">
+                </div>
+                <div>
+                    <input type="button" value="4" name="b4" onclick="sarah(b4.value)">
+                    <input type="button" value="5" name="b5" onclick="sarah(b5.value)">
+                    <input type="button" value="6" name="b6" onclick="sarah(b6.value)">
+                    <input type="button" value="-" name="de" onclick="sarah(de.value)">
+                </div>
+                <div>
+                    <input type="button" value="1" name="b1" onclick="sarah(b1.value)">
+                    <input type="button" value="2" name="b2" onclick="sarah(b2.value)">
+                    <input type="button" value="3" name="b3" onclick="sarah(b3.value)">
+                    <input type="button" value="+" name="inc" onclick="sarah(inc.value)">
+                </div>
+                <div>
+                    <input type="button" value="(" name="wewe" onclick="sarah(wewe.value)">
+                    <input type="button" value=")" name="we" onclick="sarah(we.value)">
+                    <input type="button" value="0" name="b0" onclick="sarah(b0.value)">
+                    <input type="button" value="=" class="eq" onclick="display.value=eval(display.value)">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
